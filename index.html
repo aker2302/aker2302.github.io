@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdellah Kerbal's Online Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="images/logo.jpg" calss="logo">-->
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Student</p>
+                <h1>Hi,<br> I am <span>Kerbal Abdellah</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- about ---------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit quas obcaecati cumque! Nihil adipisci quae quaerat
+                        dolore ipsa dicta repellendus accusamus animi rem amet! Est quo 
+                        in nobis iste laudantium.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><h4>Web Development:</h4><br>
+                            <span>Angular </span><span>Spring boot </span><span> OpenCV</span></li>
+                            <li><h4>Mobile Development:</h4><br>
+                            <span>React Native </span><span>Android Studio </span><span>JNI </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><h4>Web Development:</h4><br>
+                            <span>Angular </span><span>Spring boot </span><span> OpenCV</span></li>
+                            <li><h4>Mobile Development:</h4><br>
+                            <span>React Native </span><span>Android Studio </span><span>JNI </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><h4>Web Development:</h4><br>
+                            <span>Angular </span><span>Spring boot </span><span> OpenCV</span></li>
+                            <li><h4>Mobile Development:</h4><br>
+                            <span>React Native </span><span>Android Studio </span><span>JNI </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- Portfolio ---------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bet&ruin.png" alt="">
+                    <div class="layer">
+                        <h3>Système de gestion des employés</h3>
+                        <p>Coming Soon</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bet&ruin.png" alt="">
+                    <div class="layer">
+                        <h3>Application de paris sportif</h3>
+                        <p>Coming Soon</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bet&ruin.png" alt="">
+                    <div class="layer">
+                        <h3>jeu "Puissance 4" avec l'algorithme A-star</h3>
+                        <p>Coming Soon</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- Contact ---------------------------------->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> abdellah.kerbal@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +33 67 35 73 45</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/aker2302"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abdellah-kerbal-a62927185/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com/users/14432342/aker2302"><i class="fa-brands fa-stack-overflow"></i></a>
+                    </div>
+                    <button class="btn btn2"><a href="" >Download CV</a></button>
+                    
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© KERBAL Abdellah</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname){
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
