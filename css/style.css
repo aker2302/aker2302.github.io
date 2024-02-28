@@ -400,7 +400,7 @@ nav ul li a.active{
     #header{
         background-image: url();
     }
-    #welcome{
+    #Home{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
