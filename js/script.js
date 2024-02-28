@@ -1,13 +1,12 @@
-var tablinks = document.getElementsByClassName("tab-links")
-var tabcontents = document.getElementsByClassName("tab-contents");
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav ul li a')
 
-function openTab(tabname){
-    for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+    
+    })
 }

@@ -15,37 +15,39 @@
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#welcome">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Me</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
     <!--------------------------------- welcome ---------------------------------->
-    <section id="welcome">
+    <section id="Home">
         <div class="welcome-text">
-            <h1><span>Hello</span>,<br> I'm Kerbal <br> Abdellah</h1>
-            <p><span>Java Developer</span></p>
-            <button class="btn-contact"><a href="#contact">Contact</a></button>
+            <div class="text-elements">
+                <h1><span>Hello</span>,<br> I'm Abdellah <br> Kerbal</h1>
+                <p><span>Java Developer</span></p>
+                <button class="btn-contact"><a href="#contact">Contact</a></button>
+            </div>
         </div>
         <div class="welcome-image">
             <img src="images/imagePerso.png" alt="imagePerso">
         </div>
     </section>
     <!--------------------------------- about ---------------------------------->
-    <section id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <div class="informations">
-                    <h1 class="sub-title">About me</h1>
+    <section id="About">
+        <div class="conatainer-about">
+            <h1 class="sub-title">About me</h1>
+            <div class="row-about">
+                <div class="flex">
                     <p><span>Are You Looking For A Talented Java Developer?</span></p>
-                    <p>Java Developer, 
+                    <p>I am a Java Developer, 
                         I have a passion for computer science and <br> possess 
                         substantial experience in web and software development. <br>
                         Ready to apply my skills to new challenges, <br>
@@ -53,35 +55,47 @@
                         My ability to propose innovative solutions and <br>
                         collaborate effectively in a team is a valuable asset.
                     </p>
+                    <ul class="skills-list">
+                        <li><i class="gg-check-o"></i>Problem Solving</li>
+                        <li><i class="gg-check-o"></i>Self-Learning</li>
+                        <li><i class="gg-check-o"></i>Adaptability</li>
+                        <li><i class="gg-check-o"></i>Passion</li>
+                    </ul>
                 </div>
-                <ul class="skills-list">
-                    <li><i class="gg-check-o"></i>Problem Solving</li>
-                    <li><i class="gg-check-o"></i>Self-Learning</li>
-                    <li><i class="gg-check-o"></i>Adaptability</li>
-                    <li><i class="gg-check-o"></i>Passion</li>
-                </ul>
-            </div>
-            <div class="about-col-2">
-                <img src="images/Group1.png">
+                <div class="flex">
+                    <img src="images/Group1.png">
+                </div>
             </div>
         </div>
     </section>
     <!--------------------------------- Portfolio ---------------------------------->
-    <section id="portfolio">
+    <section id="Portfolio">
         <div class="container">
-            <h1 class="sub-title">Work</h1>
+            <h1>Work</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/SopraXchorus.png" alt="project">
                     <div class="work-details">
                         <h3>Java Developer</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Facilis distinctio, autem, quasi, <br>
+                        <p><span class="date">03/2023 - 09/2023</span></p>
+                        <p>Sopra Steria - Secteur Public - Montreuil</p>
+                        <p><span class="status">End-of-studies internship - INGÉNIEUR D’ÉTUDE ET DÉVELOPPEMENT</span></p>
+                        <p> Dematerialization of Administrative Invoices and integration of B2B flows: The Chorus Pro Platform.
                             libero ex odit excepturi aliquam suscipit <br>
-                            fuga eum sequi quidem impedit obcaecati quam nisi <br>
-                            voluptatem non! Natus, rem. fuga eum sequi quidem impedit obcaecati quam nisi <br>
-                            fuga eum sequi quidem impedit obcaecati quam nisi <br></p>
-                        <ul>
+                            Missions: <br>
+                            <ul class="task-list">
+                                <li>Application maintenance based on ServiceNow ticket management</li>
+                                <li>Analysis and resolution of anomalies on a platform for receiving supplier invoices</li>
+                                <li>Design of around ten tests for the validation of new functionalities</li>
+                                <li>Development of new features</li>
+                                <li>Integration of Kafka into Spring Batch for messaging exchange.</li>
+                                <li>Using Altova MapForce for transforming XML, Excel and database data</li>
+                                <li>ACreation of Kafka components: Producer for sending messages, 
+                                    Consumer for receiving messages, Security to guarantee secure exchanges, 
+                                    and configuration of headers</li>
+                            </ul>
+                            </p>
+                        <ul class="tech-list">
                             <li>Java</li>
                             <li>Spring Boot</li>
                             <li>Spring Batch</li>
@@ -95,20 +109,27 @@
                 <div class="work">
                     <img src="images/Ocode.jpeg" alt="project">
                     <div class="work-details">
-                        <h3>Java & React Native</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Facilis distinctio, autem, quasi, <br>
-                            libero ex odit excepturi aliquam suscipit <br>
-                            fuga eum sequi quidem impedit obcaecati quam nisi <br>
-                            voluptatem non! Natus, rem. fuga eum sequi quidem impedit obcaecati quam nisi <br>
-                            fuga eum sequi quidem impedit obcaecati quam nisi <br></p>
-                        <ul>
-                            <li>Java</li>
+                        <h3>Mobile Developer</h3>
+                        <p><span class="date">07/2022 - 09/2022</span></p>
+                        <p>Ocode - Nantes</p>
+                        <p><span class="status">Assistant engineer internship - MOBILE DEVELOPER</span></p>
+                        <p> Innovative Communication Platform, Respectful of Personal Data. <br>
+                            Missions: <br>
+                            Design and integration of OpenCV into a React Native mobile application for detecting and reading 2D codes such as QR codes:
+                            <ul class="task-list">
+                                <li>Responsible for integrating OpenCV into a mobile application to improve image processing capabilities</li>
+                                <li>Helped improve the existing detection algorithm, thereby increasing the accuracy and efficiency of detection features</li>
+                                <li>Designed and developed the intuitive scanning interface, providing users with a smooth and user-friendly scanning experience</li>
+                                <li>Implemented detection in Swift and distributed the module as XCFramework to facilitate integration into the application</li>
+                                <li>Integration of Kafka into Spring Batch for messaging exchange.</li>
+                            </ul>
+                            </p>
+                        <ul class="tech-list">
                             <li>React Native</li>
+                            <li>Java</li>
                             <li>TypeScript</li>
-                            <li>OpenCV(C++)</li>
-                            <li>JNI</li>
-                            <li>swift</li>
+                            <li>OpenCV( C++ )</li>
+                            <li>Swift</li>
                         </ul>
                     </div>
                 </div>  
@@ -116,11 +137,11 @@
         </div>
     </section>
     <!--------------------------------- Contact ---------------------------------->
-    <section id="contact">
+    <section id="Contact">
         <div class="container">
-            <div class="row">
+            <div class="row-contact">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1>Contact Me</h1>
                     <p><i class="gg-sketch"></i> France</p>
                     <p><i class="gg-mail"></i> abdellah.kerbal@gmail.com</p>
                     <p><i class="gg-phone"></i> +33 67 35 73 45</p>
@@ -131,20 +152,28 @@
                     </div>
                     <button class="btn btn2"><a href="doc/Abdellah_Kerbal_CV.pdf" download="Abdellah_Kerbal_CV">Download CV</a></button>
                 </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
             </div>
         </div>
-        <footer class="footer">
-
-        </footer>
     </section>
+        <!--------------------------------- footer ---------------------------------->
+        <footer class="footer">
+            <div class="container">
+                <div class="row-footer">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About Me</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="host">
+                        <ul><li> Hosted on Github Pages</li></ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright-text">© 2024 Abdellah Kerbal</p>
+            </div>
+        </footer>
     <script src="js/script.js">
     </script>
     <script src="https://kit.fontawesome.com/4b980ad261.js" crossorigin="anonymous"></script>
