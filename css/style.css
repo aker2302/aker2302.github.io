@@ -414,9 +414,6 @@ nav ul li a.active{
     .welcome-image{
         margin-top: 20px;
     }
-    .welcome-image img{
-        
-    }
 /*------------------------- about --------------------------------*/
     .row-about{
         display: flex;
