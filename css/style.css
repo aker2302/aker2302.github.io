@@ -142,21 +142,24 @@ nav ul li a.active{
 .header-text h1 span{
     color: #EA3800;
 }
-/* ----------------------- about ----------------------- */
-#About{
-    padding: 80px 0px;
+.sub-title{
+    font-size: 60px;
+    margin-bottom: 20px;
+    padding-left: 8%;
 }
+section{
+    margin-bottom: 60px;
+}
+/* ----------------------- about ----------------------- */
 .conatainer-about{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-.sub-title{
-    margin-left: 40px;
+    padding-left: 8%;
 }
 .row-about{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .flex{
     display: flex;
@@ -164,17 +167,12 @@ nav ul li a.active{
     justify-content: center;
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 0 20px;
 }
 #About img{
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-}
-#About h1{
-    font-size: 60px;
-    margin-bottom: 20px;
 }
 #About p span{
     font-weight: bold;
@@ -217,12 +215,8 @@ nav ul li a.active{
 }
 
 /* ----------------------- portfolio ----------------------- */
-#Portfolio{
-    padding: 40px 0;
-}
-#Portfolio h1{
-    font-size: 60px;
-    margin-bottom: 20px;
+.container-portfolio{
+    padding-left: 8%;
 }
 .work-list{
     display: flex;
@@ -289,9 +283,8 @@ nav ul li a.active{
     color: #fff;
 }
 /* ----------------------- Contact Me ----------------------- */
-#Contact h1{
-    font-size: 60px;
-    margin-bottom: 20px;
+.container-contact{
+    padding-left: 8%;
 }
 .row-contact{
     display: flex;
@@ -356,6 +349,9 @@ nav ul li a.active{
     font-size: 15px;
 }
 /*------------------------- footer --------------------------------*/
+.container-footer{
+    padding: 0 8%;
+}
 .footer-links ul{
     display: flex;
 }
@@ -406,6 +402,9 @@ nav ul li a.active{
         align-items: center;
         height: auto;
     }
+    .sub-title{
+        font-size: 40px;
+    }
     .welcome-text{
         margin: 10px;
         display: flex;
@@ -413,6 +412,9 @@ nav ul li a.active{
     }
     .welcome-image{
         margin-top: 20px;
+    }
+    .title{
+        text-align: center;
     }
 /*------------------------- about --------------------------------*/
     .row-about{
@@ -427,7 +429,7 @@ nav ul li a.active{
         justify-content: center;
     }
     .sub-title{
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
     .row-contact{
