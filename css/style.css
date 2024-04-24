@@ -327,6 +327,7 @@ section{
 /* ----------------------- Contact Me ----------------------- */
 #Contact{
     position: relative;
+    height: 450px;
 }
 .container-contact{
     padding-left: 8%;
